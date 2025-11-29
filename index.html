@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guilherme Rinaldo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --accent: #0f172a;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #f3f4f6;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+    .topbar {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .topbar .name {
+      font-weight: 700;
+    }
+    .nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #0f172a;
+      font-weight: 500;
+    }
+    .hero {
+      max-width: 1050px;
+      margin: 2.5rem auto 0 auto;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 1rem;
+      padding: 2.5rem 2.5rem;
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    /* foto agora primeiro */
+    .photo {
+      flex: 0 0 180px;
+      height: 180px;
+      border-radius: 9999px;
+      background: url("./images/eu.jpg") center 45% / cover no-repeat;
+      border: 3px solid #e5e7eb;
+    }
+    .hero-text {
+      flex: 1 1 60%;
+    }
+    .hero-text h1 {   
+      font-size: 2.5rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .hero-text p.subtitle {
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+    .buttons a {
+      display: inline-block;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      padding: 0.45rem 0.9rem;
+      border-radius: 9999px;
+      border: 1px solid #0f172a;
+      text-decoration: none;
+      font-size: 0.9rem;
+      color: #0f172a;
+    }
+    .content {
+      max-width: 1050px;
+      margin: 1.5rem auto 3rem auto;
+      padding: 0 0.5rem;
+    }
+    .section {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 1rem;
+      padding: 1.75rem 1.75rem 1.2rem 1.75rem;
+      margin-bottom: 1rem;
+    }
+    .section h2 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+    }
+    @media (max-width: 800px) {
+      .hero {
+        flex-direction: column;
+        text-align: left;
+      }
+      .photo {
+        align-self: center;
+      }
+      .nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="name">Guilherme Rinaldo</div>
+  <div class="nav">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <!-- <a href="#contact">Contact</a> -->
+    <a href="#certifications">Certifications</a>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="photo"></div>
+  <div class="hero-text">
+    <h1>Guilherme Rinaldo</h1>
+    <p class="subtitle">Staff AI Engineer and Researcher · Generative AI and LLMs · Text and Voice Agents · 2x AWS Certified</p>
+    <div class="buttons">
+      <a href="https://www.linkedin.com/in/guilhermerinaldo/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/guirn" target="_blank">GitHub</a>
+      <a href="https://scholar.google.com.br/citations?user=MT4oKTgAAAAJ&hl=pt-BR&oi=ao" target="_blank">Google Scholar</a>
+      <!-- <a href="cv.pdf" target="_blank">Download CV</a> -->
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+<div class="section" id="about">
+  <h2>About</h2>
+  <p>
+    I am a <strong>Staff AI Engineer and Researcher at the Itaú Institute of Science and Technology (ICTi)</strong>, where I lead applied work in generative AI, especially text and voice agents for large, regulated environments, and lead AI research groups inside the institute. I hold an <strong>M.Sc. in Robotics from the Federal University of ABC (UFABC)</strong>, a bachelor’s degree in Engineering from UFABC, and a bachelor’s degree in Science and Technology from UFABC. I spent part of my undergraduate studies at the University of Strathclyde (UK), and I completed a postgraduate specialization in Data Science at the Aeronautics Institute of Technology (ITA). This path lets me connect research, deployment and compliance, and I <strong>collaborate with researchers from leading universities such as MIT</strong> to keep the problems I work on aligned with current academic discussions. In my current position I <strong>lead research that results in publications and patentable AI solutions</strong> in security, evaluation and voice.
+  </p>
+</div>
+
+<div class="section" id="research">
+  <h2>Research interests</h2>
+
+  <p>
+  My earlier research in robotics gave me experience with systems that need to perceive and respond reliably to their environment. My more recent work in biometrics and spoofing brought in the dimension of identity, security and evaluation. These two lines come together in my current focus on generative AI agents: I am interested in agents that can interact with humans and other agents, but also behave in a way that is verifiable and safe to deploy.
+ </p>
+
+  <p>
+    I am interested in <strong>agents that can interact with humans, with other agents and with their environment</strong> in a consistent and controllable way. My current focus is on <strong>agentic large language models</strong> that can keep long context, decide when to use tools or retrieval, and support voice interaction while still following safety and institutional policies. I have worked on research that resulted in <strong>publications and patentable AI solutions</strong> in security, evaluation and voice.
+  </p>
+  <p>
+    I am also interested in the <strong>next generation of agents that improve after deployment</strong>. I want to study how this kind of autonomous evolution can be done under clear safeguards, with behavior that can be measured and explained, so that organizations can adopt these agents at scale.
+  </p>
+</div>
+
+
+<div class="section" id="projects">
+  <h2>Selected projects</h2>
+
+  <p>
+    <strong>Ensemble Based Biometric Verification for Deepfake Resistance</strong><br>
+    Research and engineering effort that resulted in the 2025 paper published in <em>Computers</em> (MDPI). The work was carried out in collaboration with researchers from MIT and explored ensemble strategies to defend against multiple attack vectors in biometric scenarios, connecting academic methods with deployment oriented requirements.
+    <a href="https://www.mdpi.com/2073-431X/14/6/225" target="_blank">Link</a>
+  </p>
+
+  <p>
+    <strong>ASV CM Score Fusion for Robust Speaker Verification</strong><br>
+    Applied research on speaker verification in spoofed environments. The study proposes fusion of automatic speaker verification and countermeasure scores to improve robustness in realistic conditions. The work was accepted and presented at BRACIS 2025 and will appear in the proceedings. This project was also awarded <strong>2nd place in the Innovative Project category of the IEL Talent Award</strong>.
+    <a href="https://bracis.sbc.org.br/2025/bracis-st-pt-2/" target="_blank">Event page</a>
+  </p>
+
+  <p>
+    <strong>RAG Voice Assistant for the community</strong><br>
+    Open source project to demonstrate practical uses of generative AI and retrieval augmented generation in a voice interface. The repository shows how to combine speech input, LLM reasoning and retrieval to answer in a natural way, aimed at helping other developers and students understand how to build end to end AI agents.
+    <a href="https://github.com/guirn/rag_voice_assistant" target="_blank">GitHub</a>
+  </p>
+</div>
+
+
+<div class="section" id="publications">
+  <h2>Publications and Patents</h2>
+
+  <ul>
+    <li>
+      <strong>2025</strong>: Ensemble Based Biometric Verification: Defending Against Multi Strategy Deepfake Image Generation, <em>Computers</em> 14(6):225.
+      <a href="https://www.mdpi.com/2073-431X/14/6/225" target="_blank">Open access</a>
+    </li>
+    <li>
+      <strong>2025</strong>: ASV CM Score Fusion for Robust Speaker Verification in Spoofed Scenarios, accepted and presented at BRACIS 2025, publication in the proceedings pending.
+      <a href="https://bracis.sbc.org.br/2025/bracis-st-pt-2/" target="_blank">Event page</a>
+    </li>
+    <li>
+      <strong>2019</strong>: chapter in <em>Proceedings of DINAME 2017</em>, Springer.
+      <a href="https://link.springer.com/chapter/10.1007/978-3-319-91217-2_25" target="_blank">Link</a>
+    </li>
+    <li>
+      <strong>2016</strong>: Synchronization of the Mobile Robot to a Chaotic Trajectory, <em>Journal of Applied Nonlinear Dynamics</em>, 5(3):325–335.
+      <a href="https://www.lhscientificpublishing.com/journals/articles/DOI-10.5890-JAND.2016.09.005.aspx" target="_blank">Link</a>
+    </li>
+  </ul>
+
+
+</div>
+
+<div class="section" id="certifications">
+  <h2>Certifications</h2>
+  <ul>
+    <li>
+      <strong>AWS Certified Machine Learning Specialty</strong> (2024)
+      <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/8ff6766af12c431089083180749e277d" target="_blank">
+        Verify
+      </a>
+    </li>
+    <li>
+      <strong>AWS Certified Cloud Practitioner</strong> (2023)
+      <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/SN2G8F5K7FEQQY3H" target="_blank">
+        Verify
+      </a>
+    </li>
+    <li>
+      <strong>Generative AI with Large Language Models (Coursera)</strong>
+      <a href="https://www.coursera.org/account/accomplishments/verify/6Z5MJXU3R8B0" target="_blank">
+        Verify
+      </a>
+    </li>
+    <li>
+      <strong>Postgraduate Certificate in Data Science, Aeronautics Institute of Technology (ITA)</strong>
+      <a href="https://ceds.ita.br/" target="_blank">Program</a>
+    </li>
+    <li>
+      Full list on
+      <a href="https://www.linkedin.com/in/guilhermerinaldo/details/certifications/" target="_blank">LinkedIn</a>
+    </li>
+  </ul>
+</div>
+
+
+
+  <!-- <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email: youremail@example.com</p>
+    <p>Location: São Paulo, Brazil</p>
+  </div> -->
+
+</div>
+
+</body>
+</html>
