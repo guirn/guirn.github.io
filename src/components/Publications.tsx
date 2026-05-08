@@ -1,6 +1,18 @@
-import { FileText, ExternalLink, Users, Lightbulb } from "lucide-react";
+import { FileText, ExternalLink, Users, Lightbulb, Database } from "lucide-react";
 
 const publications = [
+  {
+    title:
+      "NorBERTo: A ModernBERT Model Trained for Portuguese with 331 Billion Tokens Corpus",
+    authors:
+      "Silva, E. S. N.; Costa, P. B.; Vlasman, R. C.; Costa, R. P.; Silva, H. L. P.; Pellicer, L. F. A. O.; Rinaldo, G.; Almeida, R. A.; Rabbani, D. S. R.; Oestreich, C. O.; Caridá, V. F.",
+    venue:
+      "Proceedings of the 17th International Conference on Computational Processing of Portuguese (PROPOR 2026), Vol. 1, pp. 183–193",
+    year: "2026",
+    type: "Conference",
+    link: "https://arxiv.org/abs/2605.00086",
+    modelWeights: "https://huggingface.co/Itau-Unibanco/NorBERTo-base/tree/main",
+  },
   {
     title:
       "Ensemble-Based Biometric Verification: Defending Against Multi-Strategy Deepfake Image Generation",
@@ -14,12 +26,12 @@ const publications = [
   {
     title: "ASV-CM Score Fusion for Robust Speaker Verification in Spoofed Scenarios",
     authors:
-      "Carvalho, L. A. R.; de Paula Lima, L.; Rinaldo, G.; Silva, C. O.; Beraldo, V. C.",
+      "Carvalho, L. A. R.; Lima, L. P.; Rinaldo, G.; Silva, C. O.; Beraldo, V. C.",
     venue:
-      "Brazilian Conference on Intelligent Systems (BRACIS 2025), Short Paper Track (Accepted)",
-    year: "2025",
+      "Intelligent Systems (BRACIS 2025), Springer LNCS, vol. 16182, pp. 135–150 (DOI: 10.1007/978-3-032-15993-9_10)",
+    year: "2026",
     type: "Conference",
-    link: "https://bracis.sbc.org.br/2025/bracis-st-pt-2/",
+    link: "https://link.springer.com/chapter/10.1007/978-3-032-15993-9_10",
   },
   {
     title: "Control Access System (Biometric verification)",
@@ -124,6 +136,18 @@ export function Publications() {
                       <span className="px-3 py-1 text-xs font-medium border border-border text-muted-foreground rounded-full">
                         {pub.type}
                       </span>
+                      {pub.modelWeights && (
+                        <a
+                          href={pub.modelWeights}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium border border-primary/40 text-primary rounded-full hover:bg-primary/10 transition-colors"
+                          aria-label={`Open model weights for ${pub.title}`}
+                        >
+                          <Database size={12} />
+                          Model Weights
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
